@@ -25,7 +25,9 @@ Explore as a first-time user, in this order:
 2. Log in: open the login screen. Tap the "모아33 시작하기" title 5 times —
    an e-mail/password form appears. Fill the e-mail from the REVIEW_EMAIL
    environment variable and the password from the REVIEW_PASSWORD
-   environment variable, then submit. If "이메일이나 비밀번호가 맞지
+   environment variable, then submit. If the REVIEW_EMAIL or
+   REVIEW_PASSWORD variable is empty or missing, write that in your report
+   and continue with the public pages only. If "이메일이나 비밀번호가 맞지
    않아요." appears, record the exact error and continue with the public
    pages only.
 3. Home (dashboard): check the totals, the monthly view, and the recent

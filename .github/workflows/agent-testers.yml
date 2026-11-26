@@ -447,8 +447,6 @@ jobs:
           MODEL: ${{ inputs.model }}
           LLM_BASE_URL: ${{ inputs.llm_base_url }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          REVIEW_EMAIL: ${{ secrets.MOA33_REVIEW_EMAIL }}
-          REVIEW_PASSWORD: ${{ secrets.MOA33_REVIEW_PASSWORD }}
           BLOCK_HOSTS: ${{ inputs.block_hosts }}
           RECORD_VIDEO: ${{ inputs.record_video }}
         run: bash scripts/ios/run_agent.sh
@@ -515,6 +513,8 @@ jobs:
           MODEL: ${{ inputs.model }}
           LLM_BASE_URL: ${{ inputs.llm_base_url }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          REVIEW_EMAIL: ${{ secrets.MOA33_REVIEW_EMAIL }}
+          REVIEW_PASSWORD: ${{ secrets.MOA33_REVIEW_PASSWORD }}
           BLOCK_HOSTS: ${{ inputs.block_hosts }}
           RECORD_VIDEO: ${{ inputs.record_video }}
         run: bash scripts/web/run_agent.sh
